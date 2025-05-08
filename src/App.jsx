@@ -10,13 +10,15 @@ import ChatButton from "./components/ChatButton";
 
 const App = () => {
   return (
-    <div className="font-sans text-gray-800 bg-white dark:bg-gray-900 dark:text-white relative">
+    <div className="font-sans text-gray-800 bg-white dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
       <Header />
-      <Hero />
-      <HowItWorks />
-      <WhyChooseUs />
-      <Testimonials />
-      <ContactForm />
+      <main className="flex-grow">
+        <Hero />
+        <HowItWorks />
+        <WhyChooseUs />
+        <Testimonials />
+        <ContactForm />
+      </main>
       <Footer />
       <ChatButton />
     </div>
